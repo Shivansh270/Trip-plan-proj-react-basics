@@ -3,7 +3,7 @@ import data from './data'
 import Tours from './components/Tours'
 
 const App = (props) => {
- hi
+
   const [tours, setTours] = useState(data)
 
   function removeTour(id){
@@ -23,7 +23,7 @@ const App = (props) => {
   };
   
   return (
-    <div>
+    <div className="App">
       <Tours tours = {tours} removeTour={removeTour}></Tours>
     </div>
 
