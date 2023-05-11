@@ -4,7 +4,9 @@ import Tours from './components/Tours'
 
 const App = (props) => {
 
+  
   const [tours, setTours] = useState(data)
+
 
   function removeTour(id){
     const newTours = tours.filter( tour => tour.id !== id)
